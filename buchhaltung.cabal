@@ -123,7 +123,6 @@ executable buchhaltung
                 , MissingH
                 , aeson >= 1.0.0
                 , ansi-wl-pprint
-                , array
                 , async
                 , base >= 4.0.0.0 && < 5
                 , boxes
@@ -135,14 +134,12 @@ executable buchhaltung
                 , deepseq
                 , directory
                 , edit-distance
-                , file-embed
                 , filepath
                 , formatting
                 , hashable
                 , haskeline
-                , hint
                 , hledger >= 1.1
-                , hledger-lib >= 1.1
+                , hledger-lib >= 1.15.2
                 , lifted-base
                 , megaparsec >= 5.0.0
                 , monad-control
@@ -150,11 +147,9 @@ executable buchhaltung
                 , optparse-applicative >= 0.13
                 , parsec
                 , process >= 1.1.0.2
-                , regex-compat
                 , regex-tdfa
                 , regex-tdfa-text
                 , safe
-                , semigroups
                 , split
                 , strict
                 , temporary
