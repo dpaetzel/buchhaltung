@@ -173,7 +173,7 @@ mixed' :: Amount -> MixedAmount
 mixed' = mixed . (:[])
 
 showTransactions :: Hledger.Data.Journal -> [Char]
-showTransactions = concatMap showTransactionUnelided .
+showTransactions = concatMap showTransaction .
   entriesReport defreportopts Hledger.Query.Any
 
 -- * Lenses
