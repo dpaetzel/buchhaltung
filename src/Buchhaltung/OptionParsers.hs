@@ -94,10 +94,10 @@ commands =
     <*> (fmap not $ switch $ short 'n' <> long "no-fetch"
          <> help "do not fetch new transactions"))
   (progDesc
-   "fetch and import AQ Banking transactions (using \"aqbanking request\" and \"listtrans\")")
+   "fetch and import AQ Banking transactions (using \"aqbanking request\" and \"aqbanking export\")")
 
   <> command' "match" (pure Match)
-  (progDesc "manual entry of new transactions")
+  (progDesc "")
 
   <> command' "lb" (pure ListBalances)
   (progDesc "list balances of all AQBanking accounts (only available after 'update')")
